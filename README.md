@@ -31,6 +31,7 @@ https://github.com/VSCodeVim/Vim
 ## 参考設定
 参考にした設定のリンク一覧
 
+- [いろいろ考えた末のVScodeVimの設定](https://zenn.dev/ishikawa_masasi/articles/vscodevim-settings)
 - [VSCodeをVimmer好みにしてみた](https://blog.mamansoft.net/2018/09/17/vscode-satisfies-vimmer/)
 - [VS Code でなるべくマウスを触らない設定](https://swfz.hatenablog.com/entry/2018/12/09/023651)
   - コマンドパレット関連のショートカットも載っていた
