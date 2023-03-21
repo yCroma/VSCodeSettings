@@ -45,6 +45,9 @@
         "editor.action.peekDefinition"
       ]
     },
+    // ===================================
+    // === Move ==========================
+    // ===================================
     {
       "before": [
         "<C-h>"
@@ -79,6 +82,24 @@
       "after": [
         "<C-w>",
         "l"
+      ]
+    },
+    {
+      "before": [
+        "[",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.previousEditor"
+      ]
+    },
+    {
+      "before": [
+        "]",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.nextEditor"
       ]
     },
     {
