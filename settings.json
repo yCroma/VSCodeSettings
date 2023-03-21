@@ -1,0 +1,116 @@
+{
+  "workbench.colorTheme": "GitHub Dark",
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  // plugins
+  "vim.hlsearch": true,
+  "vim.foldfix": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "lineBreakInsert"
+      ],
+      "silent": true
+    },
+    // 俺が登録した
+    {
+      "before": [
+        "<esc>",
+        "<esc>"
+      ],
+      "commands": [
+        ":nohl"
+      ],
+      "silent": true
+    },
+    {
+      "before": [
+        "g",
+        "d"
+      ],
+      "commands": [
+        "editor.action.peekDefinition"
+      ]
+    },
+    {
+      "before": [
+        "<C-h>"
+      ],
+      "after": [
+        "<C-w>",
+        "h"
+      ]
+    },
+    {
+      "before": [
+        "<C-j>"
+      ],
+      "after": [
+        "<C-w>",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "<C-k>"
+      ],
+      "after": [
+        "<C-w>",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "<C-l>"
+      ],
+      "after": [
+        "<C-w>",
+        "l"
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "e",
+        "i"
+      ],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
+      ],
+    },
+    {
+      "before": [
+        "<space>",
+        "e",
+        "m"
+      ],
+      "commands": [
+        "workbench.action.toggleActivityBarVisibility"
+      ],
+    },
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+}
