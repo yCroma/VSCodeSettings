@@ -2,6 +2,11 @@
   "workbench.colorTheme": "GitHub Dark",
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
+  "terminal.integrated.profiles.windows": {
+    "OCaml64": {
+      "path": "C:\\OCaml64\\Cygwin.bat",
+    }
+  },
   // plugins
   "vim.hlsearch": true,
   "vim.foldfix": true,
@@ -134,4 +139,5 @@
       ]
     }
   ],
+  "workbench.activityBar.visible": false,
 }
