@@ -1,8 +1,32 @@
 // 既定値を上書きするには、このファイル内にキー バインドを挿入します
 [
-    {
+    { // explorer から editorGroup へ 戻る
         "key": "ctrl+l",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "explorerViewletVisible && explorerViewletFocus"
+    },
+    { // terminal から editorGroup へ戻る
+        "key": "ctrl+k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "panelFocus"
+    },
+    { // terminal のパネルで次のterminalGroup へ移動する
+        "key": "ctrl+n",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    { // terminal のパネルで前のterminalGroup へ移動する
+        "key": "ctrl+p",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.quickOpenView",
+        "when": "editorTextFocus" // when を外すとシステムキーバインドになる // システム設定は削除済み
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quickOpenView"
     },
 ]
