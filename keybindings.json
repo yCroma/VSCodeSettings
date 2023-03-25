@@ -10,6 +10,14 @@
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "panelFocus"
     },
+    { // 前のタブへ移動
+        "key": "[ b",
+        "command": "workbench.action.previousEditor"
+    },
+    { // 次のタブへ移動
+        "key": "] b",
+        "command": "workbench.action.nextEditor"
+    },
     { // terminal のパネルで次のterminalGroup へ移動する
         "key": "ctrl+n",
         "command": "workbench.action.terminal.focusNext",
@@ -21,12 +29,32 @@
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
     },
     {
-        "key": "ctrl+q",
-        "command": "workbench.action.quickOpenView",
-        "when": "editorTextFocus" // when を外すとシステムキーバインドになる // システム設定は削除済み
+        "key": "ctrl+q t",
+        "command": "workbench.action.togglePanel"
     },
-    {
-        "key": "ctrl+q",
-        "command": "-workbench.action.quickOpenView"
+    { // explorer で新規ファイル作成
+        "key": "a",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && explorerViewletFocus"
     },
+    { // explorer で新規フォルダ作成
+        "key": "shift+a",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && explorerViewletFocus"
+    },
+    { // explorer で rename
+        "key": "r n",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    // 既存設定回避用マッピング
+    // {
+    //     "key": "ctrl+q",
+    //     "command": "workbench.action.quickOpenView",
+    //     "when": "editorTextFocus" // when を外すとシステムキーバインドになる // システム設定は削除済み
+    // },
+    // {
+    //     "key": "ctrl+q",
+    //     "command": "-workbench.action.quickOpenView", // システム用マッピング
+    // },
 ]
